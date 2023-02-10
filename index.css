@@ -1,0 +1,57 @@
+:root {
+    --bg1: #fefae0;
+    --bg2: #023047;
+    --yl: #ffb703;
+    --yd: #fb8500;
+    --blue: #219ebc;
+    --lblue: #8ecae6;
+}
+
+* {
+    font-family:'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+}
+
+section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 60vh;
+    padding: 100px 10vw;
+}
+
+section:nth-child(odd) {
+    background: var(--bg2);
+    color: var(--bg1)
+}
+
+section:nth-child(even) {
+    background: var(--bg1);
+    color: black;
+}
+
+.border {
+    aspect-ratio: 960/120;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url('./images/whitedown.svg');
+}
+.layer2 {
+    background-image: url('./images/whiteup.svg')
+}
+.layer3 {
+    background-image: url('./images/bluedown.svg');
+}
+.layer4 {
+    background-image: url('./images/blueup.svg');
+}

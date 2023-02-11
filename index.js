@@ -1,10 +1,12 @@
+// Scroll Animation
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('show');}
-        //  else {
-        //     entry.target.classList.remove('show')
-        // } <--In case you want to make effect repeat
+         else {
+            entry.target.classList.remove('show')
+        } 
         
     })
 })
@@ -22,3 +24,14 @@ const hiddenElements = document.querySelectorAll('.hidden');
 
 hiddenElements.forEach((el) => observer.observe(el));
 // hiddenImage.forEach((el) => imgObserver.observe(el));
+
+//Navbar
+
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+
+hamburger.addEventListener('click', function () {
+    this.classList.toggle('is-active')
+    navMenu.classList.toggle('is-active')
+})
+

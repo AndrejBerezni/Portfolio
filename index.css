@@ -89,6 +89,10 @@ section:nth-of-type(odd) {
     background-image: url('./images/brw.svg')
 }
 
+.section-title {
+    font-size: 3rem;
+}
+
 /* HOME */
 
 
@@ -138,9 +142,6 @@ section:nth-of-type(odd) {
 #stack {
     padding-top: 40px;
 }
-#stack h1 {
-    font-size: 3rem;
-}
 
 .img-container {
     display: flex;
@@ -150,8 +151,8 @@ section:nth-of-type(odd) {
 }
 .stack-img {
     aspect-ratio: 1/1;
-    max-width: 15vw;
-    max-height: 15vw;
+    max-width: 10vw;
+    max-height: 10vw;
 }
 
 .stack-item {
@@ -159,7 +160,7 @@ section:nth-of-type(odd) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 20vw;
+    max-width: 15vw;
 }
 
 

@@ -155,6 +155,7 @@ section:nth-of-type(odd) {
     max-height: 10vw;
 }
 
+
 .stack-item {
     margin: 10px 20px;
     display: flex;
@@ -162,13 +163,18 @@ section:nth-of-type(odd) {
     align-items: center;
     max-width: 15vw;
 }
+ /* PROJECTS */
+ #projects {
+    padding-top: 40px;
+ }
+ /* EXPERIENCE */
 
 
 
 
 
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
     .typing {
         font-size: 1.5em;
     }
@@ -182,14 +188,62 @@ section:nth-of-type(odd) {
         max-height: 20vw;
     }
 
+
+
     #stack {
         padding-top: 30px;
         padding-bottom: 70px;
     }
 
     .stack-item {
-        width: 15vw;
+        width: 14vw;
         font-size: 0.75em;
     }
 
+    #stack h1 {
+        font-size:2.5rem;
+    }
+
+    #experience h1 {
+        font-size: 1.6rem;
+     }
+
   }
+
+  @media (max-width: 400px) {
+    .stack-item {
+        width: 12vw;
+        font-size: 0.75em;
+    }
+  }
+
+  @media (max-width: 280px) {
+    #home p {
+        font-size: 0.8rem;
+    }
+    .stack-item {
+        width: 6vw;
+        font-size: 0.75em;
+        margin-right: 24px;
+        margin-left: 24px;
+        font-size: 0.65em;
+    }
+
+    .typing {
+        font-size: 1.1em;
+    }
+    #avatar{
+        max-width: 80vw;
+    }
+
+    #stack h1 {
+        font-size: 1.8rem;
+    }
+    #projects h1, #contact h1 {
+        font-size: 2rem;
+    }
+    #experience h1 {
+        font-size: 1.3rem;
+     }
+  }
+

@@ -44,15 +44,7 @@ body {
     filter:blur(0);
 } */
 
-.logo:nth-child(2) {
-    transition-delay: 200ms;
-}
-.logo:nth-child(3) {
-    transition-delay: 400ms;
-}
-.logo:nth-child(4) {
-    transition-delay: 600ms;
-}
+
 /* LAYOUT */
 
 section{
@@ -93,6 +85,15 @@ section:nth-of-type(odd) {
     font-size: 3rem;
 }
 
+.mobile-top {
+    display: none;
+}
+
+.under-construction {
+    max-width: 30vw;
+    max-height: 30vw;
+}
+
 /* HOME */
 
 
@@ -107,6 +108,7 @@ section:nth-of-type(odd) {
   }
   
   .typing {
+    margin-top: 40px;
     width: 31ch;
     animation: typing 2s steps(31), blink .5s step-end infinite alternate;
     white-space: nowrap;
@@ -163,6 +165,16 @@ section:nth-of-type(odd) {
     align-items: center;
     max-width: 15vw;
 }
+
+.logo:nth-child(2) {
+    transition-delay: 300ms;
+}
+.logo:nth-child(3) {
+    transition-delay: 600ms;
+}
+.logo:nth-child(4) {
+    transition-delay: 900ms;
+}
  /* PROJECTS */
  #projects {
     padding-top: 40px;
@@ -175,6 +187,17 @@ section:nth-of-type(odd) {
 
 
 @media (max-width: 800px) {
+    .mobile-top {
+        display: inline-block;
+        width: 100vw;
+        height: 4vh;
+        background-color: var(--bg2);
+        margin-bottom: 10px;
+        position: fixed;
+        top:0;
+        z-index: 20;
+        opacity: 0.9;
+    }
     .typing {
         font-size: 1.5em;
     }

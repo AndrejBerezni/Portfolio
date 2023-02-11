@@ -52,7 +52,7 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 70vh;
+    /* min-height: 70vh; */
     padding: 10px 10vw;
 }
 
@@ -142,7 +142,7 @@ section:nth-of-type(odd) {
   }
 /* STACK */
 #stack {
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 .img-container {
@@ -181,12 +181,81 @@ section:nth-of-type(odd) {
  }
  /* EXPERIENCE */
 
+ /* CONTACT */
+#contact {
+    max-height: 60vh;
+    min-height: 40vh;
+}
+#contact-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    margin: 0 auto;
+    max-width: 30vw;
+ }
+
+ .contact-icon {
+    color: var(--red);
+    font-size: 4rem;
+    margin: 4vw 4vw 1px 4vw;
+    transition: 1.2s;
+
+ }
+
+.contact-icon:hover {
+    transform: rotateY(360deg);
+ }
+
+.contact-link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 20px;
+ }
+
+/* 
+ .link-text:hover p {
+    text-decoration: underline;
+ } */
+.link-text {
+    font-weight: bold;
+    /* position: relative;
+    transition: all 0.2s ease-out; */
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+/* .link-text::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 100%;
+    height: 2px;
+    background-color: var(--red);
+    transition: right .3s ease-out;
+}
+
+.link-text:hover::before {
+    right:0;
+} */
+
+.link-text:hover{
+    color: var(--red)
+}
 
 
-
-
+/* MEDIA QUERIES */
 
 @media (max-width: 800px) {
+    .under-construction {
+        max-width: 60vw;
+        max-height: 60vw;
+    }
     .mobile-top {
         display: inline-block;
         width: 100vw;
@@ -211,8 +280,6 @@ section:nth-of-type(odd) {
         max-height: 20vw;
     }
 
-
-
     #stack {
         padding-top: 30px;
         padding-bottom: 70px;
@@ -231,6 +298,17 @@ section:nth-of-type(odd) {
         font-size: 1.6rem;
      }
 
+    #contact h1 {
+        font-size: 2rem;
+    }
+
+    .contact-icon {
+        font-size: 2.8rem;
+    }
+
+    .link-text{
+        display: none;
+    }
   }
 
   @media (max-width: 400px) {

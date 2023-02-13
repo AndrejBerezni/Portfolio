@@ -226,6 +226,9 @@ section:nth-of-type(odd) {
     }
   }
 
+  #home {
+    padding-top: 5vh;
+  }
   #home p {
     margin: 80px auto;
     max-width: 40vw;
@@ -246,12 +249,12 @@ section:nth-of-type(odd) {
 .stack-img {
     aspect-ratio: 1/1;
     max-width: 10vw;
-    max-height: 10vw;
+    max-height: 10vh;
 }
 
 
 .stack-item {
-    margin: 10px 20px;
+    margin: 10px 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -363,8 +366,8 @@ section:nth-of-type(odd) {
     }
 
     .stack-img {
-        max-width: 20vw;
-        max-height: 20vw;
+        max-width: 15vw;
+        max-height: 15vh;
     }
 
     #stack {
@@ -375,14 +378,13 @@ section:nth-of-type(odd) {
     .stack-item {
         width: 14vw;
         font-size: 0.75em;
+        margin: 20px 20px;
     }
     
-    #stack h1 {
+    #stack h1,  #projects h1 {
         font-size:2.5rem;
     }
-    #projects h1 {
-        font-size: 2.5rem;
-    }
+
     #experience h1 {
         font-size: 1.6rem;
      }
@@ -433,7 +435,7 @@ section:nth-of-type(odd) {
   @media (max-width: 400px) {
     .stack-item {
         width: 12vw;
-        font-size: 0.75em;
+        font-size: 1em;
     }
   }
 
@@ -446,7 +448,7 @@ section:nth-of-type(odd) {
         font-size: 0.75em;
         margin-right: 24px;
         margin-left: 24px;
-        font-size: 0.35em;
+        font-size: 0.7em;
     }
 
     .typing {
@@ -456,10 +458,7 @@ section:nth-of-type(odd) {
         max-width: 80vw;
     }
 
-    #stack h1 {
-        font-size: 1.5rem;
-    }
-    #projects h1, #contact h1 {
+    #stack h1, #projects h1, #contact h1 {
         font-size: 1.5rem;
     }
     #experience h1 {

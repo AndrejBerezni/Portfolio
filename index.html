@@ -8,9 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
 <link rel="stylesheet" href="./index.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+
 <script defer src="index.js"></script>
+
 </head>
 <body>
     <nav class="nav-bar">
@@ -120,7 +125,70 @@
         <div class="border layer1"></div>
         <section id="experience">
             <h1 class="hidden section-title"><span class="hl-text">&lt</span>WorkExperience <span class="hl-text">/&gt</span></h1>
-            <img src="./images/stack/underconstruction.png" class="under-construction">
+            <div class="swiper hidden">
+            <div class="swiper-wrapper ">
+            <div class="exp-item swiper-slide ">
+                <img src="./images/experience/Microsoft-Logo.png">
+                <h2>FastTrack Migration SME</h2>
+                <h4>October 2022 - Present</h4>
+                <ul>
+                    <li>Providing guidance on Google Workspace to Microsoft 365 migration to Enterprise customers</li>
+                    <li>Troubleshooting migration issues and collaborating with different resources on their resolution.</li>
+                    <li>Analysing migration data using SQL.</li>
+                    <li>Working on defining and automating processes, writing PowerShell scripts for automation of certain tasks.</li>
+                </ul>
+            </div>
+            <div class="exp-item swiper-slide ">
+                <img src="./images/experience/leaseplan.png">
+                <h2>Migration Engineer</h2>
+                <h4>January 2022 - September 2022</h4>
+                <ul>
+                    <li>Migrating data from FileShare Servers to SharePoint Online using ShareGate Migration Tool.</li>
+                    <li>Engaging company's entities for planning migrations and providing post-migration support.</li>
+                    <li>Creating reports in Microsoft Power BI to showcase adoption and usage of new products.</li>
+                    <li>Working in Agile/Scrum methodology, using Jira tool.</li>
+                </ul>
+            </div>
+            <div class="exp-item swiper-slide ">
+                <img src="./images/experience/Microsoft-Logo.png">
+                <h2>Microsoft Teams Subject Matter Expert</h2>
+                <h4>March 2021 - September 2021</h4>
+                <ul>
+                    <li>Guiding organizations through the planning, implementation, governance and transition to Microsoft Teams</li>
+                    <li>Guiding organizations on interaction of Microsoft Teams with Microsoft 365 environment, using Exchange Online, SharePoint Online, OneDrive for Business, Azure Active Directory and additional services.</li>
+                </ul>
+            </div>
+            <div class="exp-item swiper-slide ">
+                <img src="./images/experience/Microsoft-Logo.png">
+                <h2>Migration Velocity Manager</h2>
+                <h4>March 2020 - February 2021</h4>
+                <ul>
+                    <li>Building a schedule for moving customer's data to the Microsoft Cloud.</li>
+                    <li>Acting as a bridge between the Migration execution team and the customer.</li>
+                    <li>Recommending best practices for migrations and managing migration events.</li>
+                    <li>Being a single point of contact to address escalations coming from customers and internal stakeholders.</li>
+                </ul>
+            </div>
+            <div class="exp-item swiper-slide">
+                <img src="./images/experience/fujitsu.png">
+                <h2>Service Desk Expert</h2>
+                <h4>February 2019 - February 2020</h4>
+                <ul>
+                    <li>Providing technical support for Office 365 and Windows 10 as Level 1 and Level 2 agent.</li>
+                </ul>
+            </div>
+            <div class="exp-item swiper-slide">
+                <img src="./images/experience/SELLBYTEL.png">
+                <h2>Customer Support Agent</h2>
+                <h4>August 2018 - February 2019</h4>
+                <ul>
+                    <li>Supporting iOS and MacOS users via phone and remote access tools.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
         </section>
         <div class="border layer2"></div>
         <section id="contact">
@@ -144,4 +212,5 @@
 
     </main>
 </body>
+<script src="./swiper/swiper-bundle.min.js"></script>
 </html>
